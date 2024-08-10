@@ -20,7 +20,7 @@ func setupRouter() *gin.Engine {
 	router.Use(middleware.CorsMiddleware())
 	router.GET("/sample", sample)
 
-	router.Use(middleware.AuthMiddelware())
+	// router.Use(middleware.AuthMiddelware())
 
 	return router
 }
